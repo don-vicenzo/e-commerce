@@ -1,0 +1,14 @@
+/* overide bootstrap boja */
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ebebeb,
+  "secondary": #606060,
+  "info": #7a7a7a,
+  "warning": #f7f6f6,
+);
+
+/* Ovo mora uvek biti posle mog */
+// Custom.scss
+// Option A: Include all of Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+

@@ -1,0 +1,51 @@
+/* moj CSS */
+h1, h2 {
+    font-size: 40px;
+    word-spacing: 6px;
+    letter-spacing: 1.7px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding-top: 0px;
+    overflow-x: hidden;
+    background-color: cadetblue;
+}
+
+.wrapper { max-width: 1024px;}
+
+.sourceSansPro14 { font-family: 'Source Sans Pro', sans-serif; font-size: 14px; }
+.sourceSansPro16 { font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 300; }
+.sourceSansPro18 { font-family: 'Source Sans Pro', sans-serif; font-size: 18px; font-weight: 300;}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* Vertical line in navbar */
+    ul { list-style:none; }
+    ul li{
+        display:inline-block; 
+        padding:0 7px; 
+        position:relative;
+    }
+    ul li:not(:last-child)::after{
+        content:""; 
+        border: 4px solid #606060;
+        opacity: 40%;
+        border-width: 1px 1px 0 0;
+        position:absolute; 
+        right:-3px; 
+        top: 13px; 
+        height: 36%;
+    }
+}
+
+.searchMy { width: 310px; }
+
+/* On mobile */
+@media screen and (max-width: 420px) {
+    .searchMy { width: 115px; margin: 0px;}
+}
+
+.linija { opacity: 30%; }
+
