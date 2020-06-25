@@ -1,2 +1,2 @@
 # e-commerce
-E-commerce web site build with HTML, CSS and Bootstrap 4
+E-commerce web site built with HTML, CSS and Bootstrap 4
