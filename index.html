@@ -24,6 +24,8 @@
 <!-- <script src="https://kit.fontawesome.com/029a711cd1.js" crossorigin="anonymous"></script> -->
 <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 <title>Home</title>
 </head>
@@ -38,7 +40,7 @@
         <div class="container px-md-2">
 
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white pt-1 pt-sm-0 pl-sm-3 px-xl-2 pb-5 mb-1">
+            <nav class="navbar navbar-expand-md navbar-light bg-white pt-1 pt-sm-0 px-md-3 px-xl-5 pb-5 mb-1">
 
                     <!-- brand -->
                     <a class="navbar-brand pt-0 mr-0 mr-sm-3" href="index.html">
@@ -49,12 +51,12 @@
 
                     <!-- search-box -->
                     <div class="input-group pl-sm-3 pt-0 searchMy">
-                        <span class="input-group-append" style="height: 31px;">
+                        <span class="input-group-append heightMy">
                             <button class="btn btn-white bg-white pl-1 pt-1 pr-2 text-info border-right-0 border border-secondary" type="button">
                                 <i class="material-icons">search</i>
                             </button>
                         </span>
-                        <input class="form-control pl-0 shadow-none sourceSansPro14 text-secondary py-2 border-left-0 rounded-0 border border-secondary" type="search" placeholder="Search..." id="search-input" style="height: 31px;">
+                        <input class="form-control pl-0 shadow-none sourceSansPro14 text-secondary py-2 border-left-0 rounded-0 border border-secondary heightMy" type="search" placeholder="Search..." id="search-input" style="height: 31px;">
                     </div>
                     <!-- /.search-box -->
 
@@ -66,7 +68,7 @@
                     <!-- /.collapse button -->
                 
                     <!-- List -->
-                    <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse ml-auto navigacija" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto sourceSansPro16 position-relative">
 
                             <li class="nav-item pr-lg-4">
@@ -132,11 +134,11 @@
                     <!-- /.hr line -->
 
                    <!-- images group -->
-                   <div class="row no-gutters justify-content-md-center justify-content-xs-around px-md-5 pb-3">
-                       <div class="col-md-3 pr-md-4 mr-md-4 mr-lg-0 text-md-right">
+                   <div class="row no-gutters justify-content-md-center justify-content-sm-around px-md-5 pb-3">
+                       <div class="col-md-3 pr-md-4 mr-md-4 mr-lg-0 text-md-right pb-3 pb-sm-0">
                             <img src="images/image3JPG.jpg" class="rounded-0 border border-info" alt="...">
                        </div>
-                       <div class="col-md-3 pt-sm-2 px-0 pt-md-0">
+                       <div class="col-md-3 pt-sm-2 px-0 pt-md-0 pb-3 pb-sm-0">
                             <img src="images/image3JPG.jpg" class="rounded-0 border border-info" alt="...">
                         </div>  
                         <div class="col-md-3 pl-md-4 pt-sm-2 pt-md-0 text-md-left">
@@ -149,7 +151,7 @@
                     <!-- button -->
                     <div class="row justify-content-center pb-2 pt-4">
                         <div class="col-md-3 col-sm-12">
-                            <button class="btn btn-secondary sourceSansPro18 rounded-sm text-nowrap py-2" style="width: 182px;">Shop Now</button>
+                            <button class="btn btn-secondary sourceSansPro18 rounded-sm text-nowrap py-2 shopNow">Shop Now</button>
                         </div>
                     </div>
                     <!-- /.button -->
@@ -163,21 +165,21 @@
 
 
         <!-- big hr line -->
-        <div class="row pt-5 pb-4">
-            <div class="col-12"><hr class="border-info linija"></div>
+        <div class="row pt-5 pb-3 mx-0">
+            <div class="col-12 px-0"><hr class="border-info linija"></div>
         </div><!-- /.big hr line -->
 
         <!-- Page Content 2nd part -->
-        <div class="container-fluid">
+        <div class="container-fluid px-0">
 
             <!-- 2nd row -->
-            <div class="row no-gutters justify-content-center align-items-center">
+            <div class="row no-gutters justify-content-between align-items-center">
                 
                 <!-- III part -->
-                <div class="col-12 align-items-center justify-content-center text-center text-secondary" >
+                <div class="col-12 align-items-center text-center text-secondary" >
                     
                      <!-- Heading -->
-                    <div class="row pb-3 pt-3">
+                    <div class="row pb-3 pt-4 mx-0">
                         <div class="col-12">
                             <h2>Featured Products</h2>
                         </div>
@@ -186,48 +188,90 @@
 
                     <!-- Img slider -->
                     <div class="d-flex flex-row justify-content-lg-between justify-content-xl-center">
-                        <!-- <div class="col-12 px-0"> -->
+                        <div class="col-12 px-0">
 
-                            <div class="col-lg-6 col-xl-5 pl-lg-0 pr-lg-2  text-xl-center">
-                                <!-- left arrow -->
-                                <svg class="bi bi-caret-left-fill d-sm-none d-lg-inline-block" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                                  </svg><!-- /.left arrow -->
-                            
-                                <!-- 1st image -->
-                               <img src="images/imgSLIDER.jpg" class="img img-fluid rounded-0 border border-info" alt="...">
+                            <!-- carousel -->
+                            <div id="carouselExampleControls" class="carousel slide px-lg-5" data-ride="carousel"
+                            data-interval="false">
+                            <div class="carousel-inner px-5 px-lg-2">
+
+                                <div class="carousel-item active">
+                                    <div class="row m-0">
+                                        <div class="col-6 p-0 d-flex pr-lg-4 pr-sm-3">
+                                            <div class="card border-0  m-0">
+                                                <img class="card-img-top  rounded-0 border border-info" src="images/imgSLIDER.jpg"
+                                                    alt="Card image cap">
+                                                <div class="card-body px-0">
+                                                    <p class="card-text m-0">
+                                                    <h5 class="text-uppercase m-0 text-center text-secondary sourceSansPro18">Product Name</h5>
+                                                    <h5 class="m-0 text-center pt-1 text-secondary sourceSansPro18">$300</h5>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 d-flex pl-lg-4 pl-sm-3">
+                                            <div class="card  border-0 ml-auto">
+                                                <img class="card-img-top  rounded-0 border border-info" src="images/imgSLIDER.jpg"
+                                                    alt="Card image cap">
+                                                <div class="card-body px-0">
+                                                    <p class="card-text m-0">
+                                                    <h5 class="text-uppercase m-0 text-center text-secondary sourceSansPro18">Product Name</h5>
+                                                    <h5 class="m-0 text-center pt-1 text-secondary sourceSansPro18">$300</h5>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row m-0">
+                                        <div class="col-6 p-0 d-flex pr-lg-4 pr-sm-3">
+                                            <div class="card border-0 m-0">
+                                                <img class="card-img-top rounded-0 border border-info" src="images/imgSLIDER.jpg"
+                                                    alt="Card image cap">
+                                                <div class="card-body px-0">
+                                                    <p class="card-text m-0">
+                                                    <h5 class="text-uppercase m-0 text-center text-secondary sourceSansPro18">Product Name</h5>
+                                                    <h5 class="m-0 text-center pt-1 text-secondary sourceSansPro18">$500</h5>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 d-flex pl-lg-4 pl-sm-3">
+                                            <div class="card border-0 ml-auto">
+                                                <img class="card-img-top  rounded-0 border border-info" src="images/imgSLIDER.jpg"
+                                                    alt="Card image cap">
+                                                <div class="card-body px-0">
+                                                    <p class="card-text m-0">
+                                                    <h5 class="text-uppercase m-0 text-center text-secondary sourceSansPro18">Product Name</h5>
+                                                    <h5 class="m-0 text-center pt-1 text-secondary sourceSansPro18">$700</h5>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                              
-                            <div class="col-lg-6 col-xl-5 pr-lg-0 pl-xl-0 pl-lg-2 text-xl-center">
-                                <!-- 2nd image -->
-                                <img src="images/imgSLIDER.jpg" class="img img-fluid rounded-0 border border-info" alt="...">
-                          
-                                <!-- right arrow -->
-                                <svg class="bi bi-caret-right-fill d-sm-none d-lg-inline-block" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                                </svg><!-- /.right arrow -->
-                            </div>
+                            <a class="carousel-control-prev pl-lg-0 pr-sm-4 pr-lg-5 pl-0" href="#carouselExampleControls" role="button"
+                                data-slide="prev">
+                                <span class="fa fa-caret-left fa-3x text-secondary pr-md-5 pr-lg-3 pb-5 mb-4" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next pr-lg-0 pl-sm-4 pl-lg-5 pr-0" href="#carouselExampleControls" role="button"
+                                data-slide="next">
+                                <span class="fa fa-caret-right fa-3x text-secondary pl-md-5 pl-lg-3 pb-5 mb-4" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!-- /.carousel -->
                             
-                        <!-- </div>   -->
+                        </div>  
                      </div>
                     <!-- /.img slider -->
 
                     
-                    <!-- Description -->
-                     <div class="row justify-content-md-center pt-3 pb-1">
-                        <div class="col-6">
-                            <span class="sourceSansPro18 text-uppercase text-secondary">Product Name</span>
-                            <br> <span>300$</span>
-                        </div>
-                        <div class="col-6">
-                            <span class="sourceSansPro18 text-uppercase text-secondary">Product Name</span>
-                            <br> <span>300$</span>
-                        </div>
-
-                        
-                     </div>
-
-
                 </div><!-- /.III part -->
 
             </div><!-- 2nd row -->
@@ -236,16 +280,16 @@
 
 
         <!-- big hr line -->
-        <div class="row py-4">
-            <div class="col-12"><hr class="border-info linija"></div>
+        <div class="row pb-4 pt-1 mx-0">
+            <div class="col-12 px-0"><hr class="border-info linija"></div>
         </div><!-- /.big hr line -->
 
 
         <!-- Page Content 3rd part -->
-        <div class="container pl-4 pl-md-3">
+        <div class="container-fluid px-4 px-lg-5 px-sm-3">
 
             <!-- 3rd row -->
-            <div class="row no-gutters justify-content-center align-items-center">
+            <div class="row px-4 px-md-2 justify-content-center align-items-center">
 
 
                 <!-- IV part -->
@@ -253,49 +297,328 @@
                     <h2>Newsletter</h2>
                 </div>
 
-                <div class="col-12 text-secondary text-left " style="height: 200px;">
-                    <div class="row">
+                <div class="col-12 pr-sm-4 pr-lg-0 text-secondary text-left">
+                    <div class="row justify-content-md-between">
                         <div class="col-md-6 col-12">
-                            <p class="sourceSansPro16 text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                            <p class="sourceSansPro16 text-secondary opacity80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
                         </div>
-                        <div class="col-md-6 col-12 text-lg-right">
-                            <form action="#">
-                                <input class="sourceSansPro18 border border-info rounded-0 pl-3 text-secondary" type="text" placeholder="Email Adress" style="width: 275px; height: 40px;">
-                                <button class="btn btn-danger rounded-sm mb-lg-1 ml-lg-2" style="width: 145px; height: 41px;">Subscribe</button>
+                        <div class="col-md-6 col-12 text-md-right pr-0">
+                            <!-- input and button -->
+                            <form class="form-inline pr-md-0">
+
+                                <div class="form-group mb-2 mr-3">
+                                  <input type="email" class="form-control rounded-0 border-secondary sourceSansPro18 pl-3" placeholder="Email Adress" style="width: 275px; height: 40px;">
+                                </div>
+
+                                <button type="submit" class="btn btn-danger rounded-sm mb-2 sourceSansPro18 subscribeBtn" >Subscribe</button>
+
                             </form>
+
+                           
+                            <!-- /.input and button -->
                         </div>
                     </div>
+
+                </div><!-- /.IV part -->
+
+            
+                </div><!-- /.3nd row -->
+            </div><!-- /.page-content 3rd part -->
+
+
+
+
+            <!-- big hr line -->
+            <div class="row pb-4 pt-4 mx-0">
+                <div class="col-12 px-0"><hr class="border-info linija"></div>
+            </div><!-- /.big hr line -->
+
+
+
+            <!-- Page Content 4rd part -->
+            <div class="container-fluid px-4 px-lg-5 px-sm-4 py-2">
+                <!-- 4rd row -->
+                <div class="row px-4 px-md-2 px-lg-2 justify-content-center align-items-center">
+
+                    <!-- V part -->
+                    <div class="col-12 text-white px-md-1 px-lg-2">
+                        
+                        <!-- row -->
+                        <div class="px-0 row m-0 d-flex justify-content-between">
+
+                            <!-- big card -->
+                            <div class="col-12 col-md-4 col-lg-auto py-0 py-sm-2 py-md-0 py-lg-4 p-0">
+                                <div class="card border-0">
+                                    <img class="card-img-top border border-info rounded-0" src="images/homeBigCard.jpg"  alt="Card image cap">
+                                    <!-- card-body -->
+                                    <div class="card-body d-flex flex-row justify-content-between p-0 pt-0">
+                                        <div class="pt-2">
+                                            <h4 class="m-0 sourceSansPro18 text-secondary">PRODUCT NAME</h4>
+                                            <h5 class="m-0 sourceSansPro16 text-secondary">$300</h5>
+                                        </div>
+                                        <!-- Rating stars -->
+                                        <div class="rating">
+                                            <input type="radio" id="star5" name="rating_1" value="5"><label for="star5" title="5 stars">5 stars</label>
+                                            <input type="radio" id="star4" name="rating_1" value="4"><label for="star4" title="4 starts">4 stars</label>
+                                            <input type="radio" id="star3" name="rating_1" value="3"><label for="star3" title="3 stars">3 stars</label>
+                                            <input type="radio" id="star2" name="rating_1" value="2"><label for="star2" title="2 stars">2 stars</label>
+                                            <input type="radio" id="star1" name="rating_1" value="1"><label for="star1" title="1 star">1 star</label>
+                                        </div><!-- /.rating stars -->
+                                    </div><!-- /.card-body -->
+                                </div>
+                            </div><!-- /.big card -->
+
+                            <!-- 2 cards -->
+                            <div class="col-12 col-md-4 col-lg-auto d-flex flex-column justify-content-between p-0 py-4 py-sm-0 py-lg-4">
+                                <!-- card -->
+                                <div class="card border-0 pb-4 py-sm-4 py-md-0">
+                                    <img class="card-img-top border border-info rounded-0 rounded-0" src="images/homeWideCard.jpg" alt="Card image cap">
+                                    <!-- card-body -->
+                                    <div class="card-body d-flex flex-row justify-content-between p-0 pt-0">
+                                        <div class="pt-2">
+                                            <h4 class="m-0 sourceSansPro16 text-secondary">PRODUCT NAME</h4>
+                                            <h5 class="m-0 sourceSansPro16 text-secondary">$300</h5>
+                                        </div>
+                                    <!-- Rating stars -->
+                                    <div class="rating">
+                                            <input type="radio" id="star55" name="rating_2" value="5"><label for="star55" title="5 stars">5 stars</label>
+                                            <input type="radio" id="star44" name="rating_2" value="4"><label for="star44" title="4 starts">4 stars</label>
+                                            <input type="radio" id="star33" name="rating_2" value="3"><label for="star33" title="3 stars">3 stars</label>
+                                            <input type="radio" id="star22" name="rating_2" value="2"><label for="star22" title="2 stars">2 stars</label>
+                                            <input type="radio" id="star11" name="rating_2" value="1"><label for="star11" title="1 star">1 star</label>
+                                        </div><!-- /.rating stars -->
+                                    </div><!-- /.card-body -->
+                                </div><!-- /.card -->
+
+                                <!-- card -->
+                                <div class="card border-0 cardPad">
+                                    <img class="card-img-top border border-secondary rounded-0" src="images/homeWideCard.jpg" alt="Card image cap">
+                                    <!-- card-body -->
+                                    <div class="card-body d-flex flex-row justify-content-between pt-0 p-0 ">
+                                        <div class="pt-2">
+                                            <h4 class="m-0 sourceSansPro16 text-secondary">PRODUCT NAME</h4>
+                                            <h5 class="m-0 sourceSansPro16 text-secondary">$300</h5>
+                                        </div>
+                                        <!-- Rating stars -->
+                                        <div class="rating">
+                                            <input type="radio" id="star555" name="rating_3" value="5"><label for="star555" title="5 stars">5 stars</label>
+                                            <input type="radio" id="star444" name="rating_3" value="4"><label for="star444" title="4 starts">4 stars</label>
+                                            <input type="radio" id="star333" name="rating_3" value="3"><label for="star333" title="3 stars">3 stars</label>
+                                            <input type="radio" id="star222" name="rating_3" value="2"><label for="star222" title="2 stars">2 stars</label>
+                                            <input type="radio" id="star111" name="rating_3" value="1"><label for="star111" title="1 star">1 star</label>
+                                        </div><!-- /.rating stars -->
+                                    </div><!-- /.card-body -->
+                                </div><!-- card -->
+                            </div><!-- 2 cards -->
+
+                            <!-- 2 cards -->
+                            <div class="col-12 col-md-4 col-lg-auto p-0 py-0 d-flex flex-column justify-content-between py-lg-4">
+                                <!-- card -->
+                                <div class="card border-0 pb-4 py-sm-4 py-md-0">
+                                    <img class="card-img-top border border-secondary rounded-0" src="images/homeWideCard.jpg" alt="Card image cap">
+                                    <!-- card-body -->
+                                    <div class="card-body d-flex flex-row justify-content-between p-0 pt-0">
+                                        <div class="pt-2">
+                                            <h4 class="m-0 sourceSansPro16 text-secondary">PRODUCT NAME</h4>
+                                            <h5 class="m-0 sourceSansPro16 text-secondary">$300</h5>
+                                        </div>
+                                        <!-- Rating stars -->
+                                        <div class="rating">
+                                            <input type="radio" id="star5555" name="rating_4" value="5"><label for="star5555" title="5 stars">5 stars</label>
+                                            <input type="radio" id="star4444" name="rating_4" value="4"><label for="star4444" title="4 starts">4 stars</label>
+                                            <input type="radio" id="star3333" name="rating_4" value="3"><label for="star3333" title="3 stars">3 stars</label>
+                                            <input type="radio" id="star2222" name="rating_4" value="2"><label for="star2222" title="2 stars">2 stars</label>
+                                            <input type="radio" id="star1111" name="rating_4" value="1"><label for="star1111" title="1 star">1 star</label>
+                                        </div><!-- /.rating stars -->
+                                    </div><!-- /.card-body -->
+                                </div><!-- /.card -->
+
+                                <!-- card -->
+                                <div class="card border-0 cardPad">
+                                    <img class="card-img-top border border-secondary rounded-0" src="images/homeWideCard.jpg" alt="Card image cap">
+                                    <!-- card-body -->
+                                    <div class="card-body d-flex flex-row justify-content-between p-0 pt-0">
+                                        <div class="pt-2">
+                                            <h4 class="m-0 sourceSansPro16 text-secondary">PRODUCT NAME</h4>
+                                            <h5 class="m-0 sourceSansPro16 text-secondary">$300</h5>
+                                        </div>
+                                        <!-- Rating stars -->
+                                        <div class="rating">
+                                            <input type="radio" id="star5551" name="rating_5" value="5"><label for="star5551" title="5 stars">5 stars</label>
+                                            <input type="radio" id="star4441" name="rating_5" value="4"><label for="star4441" title="4 starts">4 stars</label>
+                                            <input type="radio" id="star3331" name="rating_5" value="3"><label for="star3331" title="3 stars">3 stars</label>
+                                            <input type="radio" id="star2221" name="rating_5" value="2"><label for="star2221" title="2 stars">2 stars</label>
+                                            <input type="radio" id="star1112" name="rating_5" value="1"><label for="star1112" title="1 star">1 star</label>
+                                        </div><!-- /.rating stars -->
+                                    </div><!-- /.card-body -->
+                                </div><!-- /.card -->
+
+                            </div><!-- /.2cards -->
+
+                        </div><!-- /.row -->
+
+                    </div><!-- /.V part -->
+
+
+
+                </div><!-- /.4rd row -->
+            </div><!-- /.page-content 4rd part -->
+
+            <!-- big hr line -->
+            <div class="row py-4 mx-0">
+                <div class="col-12 px-0"><hr class="border-info linija"></div>
+            </div><!-- /.big hr line -->
+
+            <!-- Page Content 5th part -->
+            <div class="container-fluid px-4 px-lg-5 px-sm-4 pt-2">
+                <!-- 5th row -->
+                <div class="row px-1 px-md-4 px-lg-4 justify-content-center align-items-center">
+
+
+                    <!-- VI part -->
+                    <div class="col-12 px-md-5 text-secondary text-center">
+                        <h2 class="mb-0">About Your Shop</h2>
+                        <p class="sourceSansPro16 opacity80 px-md-5 mx-lg-5 pt-1 pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi </p>
+                    </div><!-- /.VI part -->
+
+                </div><!-- /.5th row -->
+            </div><!-- /.page-content 5th part -->
+
+
+
+            <!-- big hr line -->
+            <div class="row py-4 mx-0">
+                <div class="col-12 px-0"><hr class="border-info linija m-0"></div>
+            </div><!-- /.big hr line -->
+
+
+
+            <!-- Page Content 6th part -->
+            <div class="container-fluid px-4 px-lg-5 px-md-2 px-sm-4 pt-2">
+                <!-- 6th row -->
+                <div class="row px-4 px-md-4 px-lg-2 justify-content-center align-items-center mx-0">
+
+
+
+                    <!-- VII part -->
+                    <div class="col-12 px-0 text-secondary">
+
+                        <footer>
+                            <div class="row">
+                                <div class="col-8 col-md-4  text-left justify-content-start text-secondary">
+                                    <!-- footer-img -->
+                                    <a class="" href="#"><img src="images/footerLogo.jpg" alt="footer logo"></a>
+                                    <hr class="pl-0 m-0 mt-3 w-50">
+                                    <p class="sourceSansPro16 opacity80 pt-1">1717 Harrison St, San Francisco, <br> CA 94103, USA</p>
+                                </div>
+
+                                <!-- Main menu -->
+                                <div class="col-4 col-md-2  text-secondary">
+                                    <h4 class="sourceSansPro16">MAIN MENU</h4>
+                                    <ul class="nav flex-column list-unstyled pt-1">
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">Shop</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">Help</a>
+                                        </li>
+                                      </ul>
+                                </div><!-- /.Main menu -->
+
+                                <!-- Company -->
+                                <div class="col-4 col-md-2 text-secondary py-4 py-md-0">
+                                    <h4 class="sourceSansPro16">COMPANY</h4>
+                                    <ul class="nav flex-column list-unstyled pt-1">
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">The Company</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">Careers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">Press</a>
+                                        </li>
+                                      </ul>
+                                </div><!-- /.company -->
+
+                                <!-- Discover -->
+                                <div class="col-4 col-md-2 text-secondary py-4 py-md-0">
+                                    <h4 class="sourceSansPro16">DISCOVER</h4>
+                                    <ul class="nav flex-column list-unstyled pt-1">
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">The Team</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">Our History</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">Brand Motto</a>
+                                        </li>
+                                      </ul>
+                                </div><!-- /.discover -->
+
+                                <!-- Find us -->
+                                <div class="col-4 col-md-2 text-secondary py-4 py-md-0">
+                                    <h4 class="sourceSansPro16">FIND US ON</h4>
+                                    <ul class="nav flex-column list-unstyled pt-1">
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">Facebook</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">Twitter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-secondary sourceSansPro16 pl-0 footerPad" href="#">Instagram</a>
+                                        </li>
+                                      </ul>
+                                </div><!-- /.find us -->
+                                
+                            </div><!-- /.row -->
+                        </footer>
+                       
+                        
+                    </div>
+                    <!-- /.VII part -->
+
+
+
+                </div><!-- /.6th row -->
+            </div><!-- /.page-content 6th part -->
+
+
+
+            <!-- big hr line -->
+            <div class="row pt-4 pb-2 mx-0">
+                <div class="col-12 pb-0 mb-0 px-0"><hr class="border-info linija m-0"></div>
+            </div><!-- /.big hr line -->
+
+
+
+            <!-- Page Content 7th part -->
+            <div class="container-fluid px-3 px-lg-3 px-sm-3 px-md-4 py-0 mx-0">
+                <!-- 7th row -->
+                <div class="row px-4 px-sm-4 px-md-2 mx-0 px-lg-4 justify-content-start align-items-start pb-0">
+
+
+                    <!-- VIII part Footer -->
+                    <div class="col-12 text-secondary pt-0 mt-0 pl-0">
+                        <p class="mb-1 sourceSansPro17"><i class="fas fa-copyright text-info pr-2"></i>
+                            Your Company Details
+                        </p>
+                    </div>
+                    <!-- /.VIII part Footer -->
+
+
                 </div>
-                <!-- /.IV part -->
+                <!-- /.7th row -->
 
-
-            <!-- </div> -->
-            <!-- /.2nd row -->
-
-
-                <div class="col-12 bg-info text-white" style="height: 500px;">
-                    V
-                </div>
-
-                
-                <div class="col-12 bg-warning text-white" style="height: 200px;">
-                    VI
-                </div>
-
-                <div class="col-12 bg-danger text-white" style="height: 200px;">
-                    VII
-                </div>
-
-                <div class="col-12 bg-success text-white" style="height: 35px;">
-                    VIII
-                </div>
-
-
-            </div>
-            <!-- /.3nd row -->
-
-
-        </div><!-- /.page-content 3rd part -->
+            </div><!-- /.page-content 7th part -->
 
     </div><!-- /.wrapper -->
 
