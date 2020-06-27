@@ -57,6 +57,7 @@ h1, h2 {
 }
 
 .linija { opacity: 30%; }
+.linija2 { width: 35%; }
 
 /* Star rating */
 .rating {
