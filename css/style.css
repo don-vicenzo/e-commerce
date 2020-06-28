@@ -3,7 +3,7 @@ body {
     font-family: 'Lato', sans-serif;
     /* overflow-x: hidden; */
     height: 100vh;
-    background-color: rgb(223, 148, 148);
+    background-color: rgb(167, 184, 174);
 }
 
 
@@ -57,13 +57,12 @@ h1, h2 {
 
 .searchMy { width: 310px; }
 .searchMy2 { width: 428px; }
-.searchMy3 { width: 400px; }
 
 /* On mobile */
 @media screen and (max-width: 420px) {
     .searchMy { width: 115px; margin: 0px;}
     .searchMy2 { width: auto; margin: 0px; }
-    .searchMy3 { width: auto; }
+    .searchMy3 { width: auto !important;}
 }
 
 .linija { opacity: 30%; }
