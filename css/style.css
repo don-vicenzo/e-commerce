@@ -15,23 +15,28 @@ h1, h2 {
 
 .wrapper { max-width: 1024px; }
 
-
 .sourceSansPro { font-family: 'Source Sans Pro', sans-serif; font-weight: 300;}
 .sourceSansPro14 { font-family: 'Source Sans Pro', sans-serif; font-size: 14px; font-weight: 300; }
 .sourceSansPro16 { font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 300; }
 .sourceSansPro17 { font-family: 'Source Sans Pro', sans-serif; font-size: 17px; font-weight: 300; }
 .sourceSansPro18 { font-family: 'Source Sans Pro', sans-serif; font-size: 18px; font-weight: 300;}
 .font20 { font-size: 20px; }
+.font36 { font-size: 36px; }
 .opacity80 { opacity: 80%; }
+.opacity30 { opacity: 30%; }
 .shopHeader { background-color: rgba(235,235,235, 0.5); }
 
+.reviewPad { padding-top: 2px; }
 .cardPad { padding-bottom: 2px;}
 .footerPad { padding-top: 1px; padding-bottom: 2px;}
 .shopNow { width: 182px; }
 .shopNow2 { width: 158px; height: 54px; }
 .subscribeBtn { width: 140px; height: 42px; }
 .heightMy { height: 31px; }
-.heightMy2 { height: 54pxpx; }
+.heightMy2 { height: 54px; }
+.height41 { height: 41px; }
+.productSmallImg { border: 1px solid #7a7a7a; }
+.productSelect { width: 216px; height: 41px; }
 
 
 /* Large devices (desktops, 992px and up) */
@@ -57,12 +62,15 @@ h1, h2 {
 
 .searchMy { width: 310px; }
 .searchMy2 { width: 428px; }
+.selectProduct { width: 212px; }
 
 /* On mobile */
 @media screen and (max-width: 420px) {
     .searchMy { width: 115px; margin: 0px;}
     .searchMy2 { width: auto; margin: 0px; }
-    .searchMy3 { width: auto !important;}
+    .searchMy3 { width: auto !important; }
+    .productSelect {width: auto; height: auto;}
+    /* .selectProduct { width: 180px; } */
 }
 
 .linija { opacity: 30%; }
@@ -118,4 +126,14 @@ h1, h2 {
     position:relative;
     top:2px;
     left:2px;
+}
+
+.avatar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border: 1px solid #606060;
+    border-radius: 50%;
+    height: 50px;
 }
