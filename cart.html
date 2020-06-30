@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CDN CSS -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+<!-- Bootstrap Local CSS -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- My CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google Fonts -->
+    <!-- Lato Light -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- Source Sans Pro Light -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<!-- <script src="https://kit.fontawesome.com/029a711cd1.js" crossorigin="anonymous"></script> -->
+<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<title>Cart</title>
+</head>
+<body>          
+
+    <!-- wrapper -->
+    <div class="wrapper container px-0 bg-white">
+
+
+
+        <!-- Page Content 1st part -->
+        <div class="container-fluid px-md-3 pt-2">
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light pt-1 pt-sm-3 px-md-3 px-xl-5">
+
+                    <!-- brand -->
+                    <a class="navbar-brand pt-0 mr-0 mr-sm-3" href="index.html">
+                        <img src="images/imageSmallPNG.png" width="45" height="35" alt="brand" class="py-0">
+                    </a>
+                    <!-- /.brand -->
+
+
+                    <!-- collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- /.collapse button -->
+                
+                    <!-- List -->
+                    <div class="collapse navbar-collapse ml-auto navigacija" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto sourceSansPro16 position-relative">
+
+                            <li class="nav-item pr-lg-4">
+                                <a class="nav-link text-secondary" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item px-lg-4">
+                                <a class="nav-link text-secondary" href="product.html">About</a>
+                            </li>
+
+                            <li class="nav-item px-lg-4">
+                            <a class="nav-link text-secondary" href="shop.html">Shop</a>
+                            </li>
+
+                            <li class="nav-item pl-lg-4 pr-lg-3">
+                                <a class="nav-link text-secondary" href="#">Help</a>
+                            </li>
+                           
+                        </ul>
+
+                        <!-- Button -->
+                        <a class="text-white btn btn-sm btn-secondary text-nowrap px-lg-3 py-lg-1 rounded-sm sourceSansPro16" href="cart.html">
+                            <i class="material-icons pr-1" style="font-size: 16px; vertical-align: middle;">shopping_cart</i>
+                            <span>Your Cart</span>
+                        </a>
+                        <!-- /.Button -->
+
+                    </div>
+
+              </nav>
+            <!-- /.navbar -->
+
+        </div><!-- /.page-content 1st part -->
+
+
+
+
+         <!-- big hr line -->
+         <div class="row pb-0 pt-2 mx-0">
+            <div class="col-12 px-0"><hr class="border-info linija m-0"></div>
+        </div><!-- /.big hr line -->
+
+
+        <!-- Page Content 2nd part -->
+        <div class="container-fluid px-0 px-lg-0 px-sm-0">
+            <!-- 2nd row -->
+            <div class="row px-0 mx-0 justify-content-center align-items-center">
+                <!-- II part -->
+                <div class="col-12 px-0 px-md-0 mx-0 text-secondary shopHeader py-4">
+                    <div class="row justify-content-md-between mx-0">
+
+
+                        <!-- 1st column -->
+                        <div class="col-12 px-0 pb-4">
+                            <div class="pt-3 pb-4 px-5">
+                              
+                                 <!-- Nav tabs -->
+                                <ul class="nav nav-tabs tabsMy d-block d-lg-flex justify-content-between pt-4 pb-0 border-bottom" role="tablist">
+                                    <li class="nav-item tabsMy px-0">
+                                    <a class="nav-link active tabsMy pb-4" data-toggle="tab" href="#home"><span class="px-5 text-nowrap">1. Shopping Cart</span></a>
+                                    </li>
+                                    <li class="nav-item tabsMy">
+                                    <a class="nav-link tabsMy pb-4" data-toggle="tab" href="#menu1"><span class="px-5 text-nowrap">2. Shipping Details</span></a>
+                                    </li>
+                                    <li class="nav-item tabsMy">
+                                    <a class="nav-link tabsMy pb-4" data-toggle="tab" href="#menu2"><span class="px-5 text-nowrap">3. Payment Options</span></a>
+                                    </li>
+                                </ul>
+                                <!-- /.Nav tabs -->
+
+                            </div>
+                        </div><!-- /.1st column -->
+
+
+
+                    </div>
+                </div><!-- /.II part -->
+            </div><!-- /.2nd row -->
+        </div><!-- /.page-content 2 part -->
+
+
+
+    <!-- Tab content -->
+    <div class="tab-content">
+
+
+       <!-- Tab Panes 1 -->
+       <div class="container-fluid px-2 pb-5 tab-pane active" id="home">
+        <!-- 3rd row -->
+        <div class="row no-gutters m-0 justify-content-between  px-4 py-5">
+            
+
+            <!-- Shopping Cart -->
+            <div class="col-12 col-lg-8 text-secondary border-bottom pb-3 pl-2 pl-lg-3 pr-4" >
+            
+                <!-- heading -->
+                <div class="row m-0 pb-4">
+                    <div class="col-12 border-bottom pl-0">
+                        <h3>Shopping Cart</h3>
+                    </div>
+                </div>
+                <!-- /.heading -->
+
+
+
+                <!-- product 1 -->
+                <div class="row m-0">
+                    <div class="col-12 col-md-2 pl-0 d-flex flex-row">
+                        <div class="pt-1"> 
+                            <img src="images/productSmall2Img.jpg" class="border border-info" alt="product 1">
+                        </div>
+                    </div>
+                    <div class="col-12 pl-0 pl-lg-3 col-md-6">
+                        <div class="pl-lg-3 pl-1 pt-1">
+                            <h3 class="sourceSansPro font20 ">PRODUCT NAME</h3>
+                                <p class="sourceSansPro16 mb-0 opacity80 text-nowrap">Lorem ipsum dolor sit amet, consectetur </p>
+                                <p class="sourceSansPro font20">$300</p>
+                        </div>
+                    </div> 
+                        
+                    <!-- select -->
+                    <div class="col-12 col-md-4 pr-0 align-self-center pt-lg-4 pl-0">
+                        <input type="number" class="form-control border border-info rounded-0 pl-4 sourceSansPro18 ml-lg-auto" placeholder="1 pcs" style="width: 108px; height: 41px;">
+                    </div><!-- /.select -->
+
+                </div>
+                <!-- /.product 1 -->
+
+
+
+                 <!-- product 2 -->
+                 <div class="row m-0 pt-5 pt-lg-2">
+                    <div class="col-12 col-md-2 pl-0 d-flex flex-row">
+                        <div class="pt-1"> 
+                            <img src="images/productSmall2Img.jpg" class="border border-info" alt="product 1">
+                        </div>
+                    </div>
+                    <div class="col-12 pl-0 pl-lg-3 col-md-6">
+                        <div class="pl-lg-3 pl-1 pt-1">
+                            <h3 class="sourceSansPro font20 ">PRODUCT NAME</h3>
+                                <p class="sourceSansPro16 mb-0 opacity80 text-nowrap">Lorem ipsum dolor sit amet, consectetur</p>
+                                <p class="sourceSansPro font20">$300</p>
+                        </div>
+                    </div> 
+                        
+                    <!-- select -->
+                    <div class="col-12 col-md-4 pr-0 align-self-center pt-lg-4 pl-0">
+                        <input type="number" class="form-control border border-info rounded-0 pl-4 sourceSansPro18 ml-lg-auto" placeholder="1 pcs" style="width: 108px; height: 41px;">
+                    </div><!-- /.select -->
+
+                </div>
+                <!-- /.product 2 -->
+
+            </div>
+            <!-- /.Shopping Cart -->
+
+
+
+            <!-- Summary -->
+            <div class="col-12 col-lg-4 pl-lg-4 pl-0 pt-4 pt-lg-0">
+
+                <!-- heading -->
+                <div class="row m-0 pb-3">
+                    <div class="col-12 border-bottom px-0">
+                        <h3>Summary</h3>
+                    </div>
+                </div>
+                <!-- /.heading -->
+
+                <!-- coupon code-->
+                <div class="row">
+                    <div class="col-12 ">
+                        <h5 class="sourceSansPro18 font-weight-bold text-secondary border-bottom pb-3">ENTER COUPON CODE</h5>
+                    </div>
+                </div><!--coupon code -->
+
+                <!-- subtotal,shipping... -->
+                <div class="row mr-0 pt-2 pb-2">
+                    <div class="col-10">
+                        <h5 class="sourceSansPro18 text-secondary">SUBTOTAL</h5>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="sourceSansPro18 text-secondary">$300</h5>
+                    </div>
+                </div>
+                <div class="row mr-0 pb-1">
+                    <div class="col-10">
+                        <h5 class="sourceSansPro18 text-secondary">SHIPPING</h5>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="sourceSansPro18 text-secondary">FREE</h5>
+                    </div>
+                </div>
+                <div class="row mx-0 pt-1 pb-2 border-bottom">
+                    <div class="col-10 pl-0">
+                        <h5 class="sourceSansPro18 text-secondary">TAXES</h5>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="sourceSansPro18 text-secondary">$13</h5>
+                    </div>
+                </div>
+                
+                <!-- /.subtotal,shipping... -->
+
+                <!-- TOTAL -->
+                <div class="row mx-0 px-0 pt-3">
+                    <div class="col-lg-9 col-10 px-0">
+                        <h4 class="sourceSansPro  text-secondary pb-3">TOTAL</h4>
+                    </div>
+                    <div class="col-lg-3 col-2 text-lg-right pl-0 pl-lg-4">
+                        <h4 class="sourceSansPro font-weight-normal">$300</h4>
+                    </div>
+                </div>
+                <!-- /.TOTAL -->
+
+            </div>
+            <!-- /.Summary -->
+
+
+
+
+            <!-- Buttons -->
+            <div class="col-12 col-sm-10 col-md-7 col-lg-5 pl-0 pt-4">
+                <div class="row justify-content-between no-gutters mt-0 pb-3 pt-1">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-lg btn-secondary rounded-sm shopNow sourceSansPro text-white ">Next</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-lg btn-danger shopNow rounded-sm sourceSansPro">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Buttons -->
+
+        </div><!-- /.3rd row -->
+    </div><!-- /.Tab Panes 1 -->
+
+
+     <!-- Tab Panes 2 -->
+     <div class="container-fluid px-2 pb-5 tab-pane fade" id="menu1">
+        <!-- big row -->
+        <div class="row no-gutters m-0 justify-content-between  px-4 py-5">
+            
+
+            <!-- Shipping Details -->
+            <div class="col-12 col-lg-8 text-secondary pb-3 pl-2 pl-lg-3 pr-4" >
+            
+                <!-- heading -->
+                <div class="row m-0 pb-4">
+                    <div class="col-12 border-bottom pl-0">
+                        <h3>Shipping Details</h3>
+                    </div>
+                </div>
+                <!-- /.heading -->
+
+
+
+                <!-- big form -->
+                <div class="row m-0">
+
+                    <!-- form -->
+                    <div class="col-12 px-0">
+                        <form>
+                            <div class="row justify-content-between">
+                              <div class="form-group col-lg-6">
+                                <input type="text" class="form-control  rounded-0 borderInput sourceSansPro " id="fname" placeholder="First Name">
+                              </div>
+                              <div class="form-group col-lg-6">
+                                <input type="text" class="form-control  rounded-0 borderInput sourceSansPro" id="lname" placeholder="Last Name">
+                              </div>
+                            </div>
+
+                            <div class="row pt-lg-2">
+                                <div class="form-group col-lg-12">
+                                  <input type="text" class="form-control rounded-0 borderInput sourceSansPro18 " id="adress" placeholder="Adress">
+                                </div>
+                            </div>
+
+                            <div class="row pt-lg-2">
+                                <div class="form-group col-lg-12">
+                                  <input type="text" class="form-control  rounded-0 borderInput sourceSansPro18 text-secondary" id="adress2" placeholder="Adress 2">
+                                </div>
+                            </div>
+
+                            <div class="row pt-lg-2">
+                                <div class="form-group col-lg-6">
+                                    <select id="country" class="form-control form-control rounded-0 sourceSansPro18 text-secondary borderInput">
+                                        <option selected>Country</option>
+                                        <option>Country 1</option>
+                                        <option>Country 2</option>
+                                        <option>Country 3</option>
+                                      </select>
+                                </div>
+                                <div class="form-group col-lg-6">
+                                  <input type="text" class="form-control rounded-0 borderInput sourceSansPro18 text-secondary" id="city" placeholder="City">
+                                </div>
+                              </div>
+
+
+                              <div class="row pt-lg-2">
+                                <div class="form-group col-lg-6">
+                                    <input type="text" class="form-control rounded-0 borderInput sourceSansPro18 text-secondary" id="zipCode" placeholder="Zip/Postal Code">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                  <input type="text" class="form-control rounded-0 borderInput sourceSansPro18 text-secondary" id="phoneNum" placeholder="Phone Number">
+                                </div>
+                              </div>
+
+                              <!-- hr line -->
+                              <div class="row pt-2 mx-0">
+                                    <div class="col-12 border-bottom"></div>
+                              </div>
+
+
+                              <!-- radio -->
+                              <div class="row pt-lg-4 mx-0">
+                                <div class="form-group col-lg-6">
+                                    <div class="row mr-lg-0 pt-3 bg-danger border borderInput">
+                                        <div class="col-2 pl-0 text-center pt-2 px-2">
+                                            <label class="container" for="shipping">
+                                                <input type="radio" name="radio" id="radio1">
+                                                <span class="checkmark"></span>
+                                            </label>    
+                                        </div>
+                                        <div class="col-10 pl-1">
+                                            <h4 class="sourceSansPro18 mb-0">Free Shipping</h4>
+                                            <p class="sourceSansPro14 opacity80">Between 2 - 5 working days</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-6 pr-lg-0">
+                                    <div class="row mx-lg-0  pt-3 border borderInput">
+                                        <div class="col-2 pl-0 text-center pt-2 px-2">
+                                            <label class="container" for="shipping">
+                                                <input type="radio" name="radio" id="radio2">
+                                                <span class="checkmark"></span>
+                                            </label>    
+                                        </div>
+                                        <div class="col-10 pl-1">
+                                            <h4 class="sourceSansPro18 mb-0">Next Day Delivery - $20</h4>
+                                            <p class="sourceSansPro14 opacity80">24 hours from checkout</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <!-- /.radio -->
+
+                            <!-- hr line -->
+                            <div class="row pt-2 mx-0">
+                                <div class="col-12 border-bottom"></div>
+                            </div>
+
+                          </form>
+                    </div><!-- /.form -->
+               
+                </div>
+                <!-- /.big form -->
+
+            </div>
+            <!-- /.Shipping Details -->
+
+
+
+            <!-- Summary 2 -->
+            <div class="col-12 col-lg-4 pl-lg-4 pl-2 pr-4 pr-lg-0 pt-4 pt-lg-0">
+
+                <!-- heading -->
+                <div class="row m-0 pb-4">
+                    <div class="col-12 border-bottom px-0">
+                        <h3>Summary</h3>
+                    </div>
+                </div>
+                <!-- /.heading -->
+                
+                <div class="row m-0 pb-4">
+                    <div class="col-12 col-sm-3 col-lg-4 pl-0 d-flex flex-row">
+                        <div class="pt-1"> 
+                            <img src="images/productSmall2Img.jpg" class="borderInput" alt="product 1">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9 col-lg-8 pl-0 pl-lg-3 ">
+                        <div class="pl-lg-3 pl-1 pt-1">
+                            <h3 class="sourceSansPro font20 ">PRODUCT NAME</h3>
+                                <p class="sourceSansPro font20">$300</p>
+                        </div>
+                    </div> 
+                </div>
+               
+
+                <div class="row m-0 pb-4">
+                    <div class="col-12 col-sm-3 col-lg-4 pl-0 d-flex flex-row">
+                        <div class="pt-1"> 
+                            <img src="images/productSmall2Img.jpg" class="borderInput" alt="product 1">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9 col-lg-8 pl-0 pl-lg-3 ">
+                        <div class="pl-lg-3 pl-1 pt-1">
+                            <h3 class="sourceSansPro font20 ">PRODUCT NAME</h3>
+                                <p class="sourceSansPro font20">$300</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- vaucher -->
+                <div class="row mx-0">
+                    <div class="col-12 border-top border-bottom px-0">
+                        <select name="select model" class="text-info py-3 w-100 border-0" > 
+                            <option selected="">HAVE A VOUCHER? </option>
+                            <option>Voucher 1</option> 
+                            <option>Voucher 2</option> 
+                            <option>Voucher 3</option> 
+                        </select> 
+                    </div>
+                </div><!-- vaucher -->
+
+                <!-- subtotal,shipping... -->
+                <div class="row mr-0 pt-3 pb-2">
+                    <div class="col-10">
+                        <h5 class="sourceSansPro18 text-secondary">SUBTOTAL</h5>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="sourceSansPro18 text-secondary">$600</h5>
+                    </div>
+                </div>
+                <div class="row mr-0 pb-1">
+                    <div class="col-10">
+                        <h5 class="sourceSansPro18 text-secondary">SHIPPING</h5>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="sourceSansPro18 text-secondary">FREE</h5>
+                    </div>
+                </div>
+                <div class="row mx-0 pt-1 pb-2 border-bottom">
+                    <div class="col-10 pl-0">
+                        <h5 class="sourceSansPro18 text-secondary">TAXES</h5>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="sourceSansPro18 text-secondary">$13</h5>
+                    </div>
+                </div>
+                
+                <!-- /.subtotal,shipping... -->
+
+                <!-- TOTAL -->
+                <div class="row mx-0 px-0 pt-3">
+                    <div class="col-lg-9 col-10 px-0">
+                        <h4 class="sourceSansPro  text-secondary pb-3">TOTAL</h4>
+                    </div>
+                    <div class="col-lg-3 col-2 text-lg-right pl-0 pl-lg-4">
+                        <h4 class="sourceSansPro font-weight-normal">$613</h4>
+                    </div>
+                </div>
+                <!-- /.TOTAL -->
+
+            </div>
+            <!-- /.Summary 2 -->
+
+
+
+
+        <!-- Buttons -->
+        <div class="col-12 col-sm-10 col-md-7 col-lg-5 pl-0 pl-lg-3">
+            <div class="row justify-content-between no-gutters mt-0 pb-3 pt-1 pt-lg-0">
+                <div class="col-6">
+                    <button type="button" class="btn btn-lg btn-secondary rounded-sm shopNow sourceSansPro text-white ">Next</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-lg btn-danger shopNow rounded-sm sourceSansPro">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+
+        </div><!-- /.big row -->
+    </div><!-- /.Tab Panes 2 -->
+
+
+
+
+    <!-- Tab Panes 3 -->
+    <div class="container-fluid px-2 pb-5 tab-pane fade" id="menu2">
+        <!-- big row -->
+        <div class="row no-gutters m-0 justify-content-between  px-4 py-5">
+            
+
+            <!-- Payment method -->
+            <div class="col-12 col-lg-8 text-secondary pl-2 pl-lg-3 pr-4" >
+            
+                <!-- heading -->
+                <div class="row m-0 pb-4">
+                    <div class="col-12 border-bottom pl-0">
+                        <h3>Payment method</h3>
+                    </div>
+                </div>
+                <!-- /.heading -->
+
+
+
+                <!-- Credit card -->
+                <div class="row m-0">
+
+                    <div class="col-12 px-0 borderInput rounded-sm mb-1">
+                       
+                        <!-- 1st row inside -->
+                        <div class="row pt-3 mx-0 justify-content-between">
+                                <div class="col-1 pl-3 pl-lg-2 text-center pt-2">
+                                    <label class="container" for="shipping">
+                                        <input type="radio" name="radio" id="radio2">
+                                        <span class="checkmark"></span>
+                                    </label>    
+                                </div>
+                                <div class="col-10 col-lg-11 pl-1">
+                                    <h4 class="sourceSansPro18 mb-0">Credit Card</h4>
+                                    <p class="sourceSansPro14 opacity80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                </div>
+                        </div>
+
+                        <!-- 2nd row inside -->
+                        <div class="row px-3 py-3">
+                            <div class="col-12">
+                                <form>
+                                    <div class="row justify-content-between">
+                                      <div class="form-group col-lg-6">
+                                        <div class="input-group m-0 borderInput rounded-0">
+											<input class="pl-2 pl-lg-4 form-control border-0" type="text" placeholder="0000   0000   0000   0000">
+											<div class="input-group-append">
+												<span class="input-group-text bg-white border-0 rounded-0 text-secondary">
+													<i class="far fa-credit-card text-info"></i>
+												</span>
+											</div>
+										</div>
+                                      </div>
+                                      <div class="form-group col-lg-3">
+                                        <input type="text" class="form-control pl-lg-4 pl-2 rounded-0 borderInput sourceSansPro18" id="date" placeholder="MM / YY">
+                                      </div>
+                                      <div class="form-group col-lg-3">
+                                        <div class="input-group m-0 borderInput rounded-0">
+											<input class="pl-2 pl-lg-4 form-control border-0" type="text" placeholder="CVV">
+											<div class="input-group-append">
+												<span class="input-group-text bg-white border-0 rounded-0 text-secondary">
+													<i class="fas fa-info-circle text-info"></i>
+												</span>
+											</div>
+										</div>
+                                      </div>
+                                    </div>
+        
+                                    <div class="row pt-lg-2">
+                                        <div class="form-group col-lg-12">
+                                          <input type="text" class="form-control rounded-0 borderInput sourceSansPro18 " id="cardholder" placeholder="Card Holder Name">
+                                        </div>
+                                    </div>
+        
+                                  </form>
+                            </div>
+                        </div>
+
+                    </div><!-- /.col-12 -->
+                </div>
+                <!-- /.Credit card -->
+
+                <!-- hr line -->
+                <div class="row pt-4 pb-1 mx-0">
+                    <div class="col-12 border-bottom"></div>
+                </div>
+
+                <!-- Paypal -->
+                <div class="row m-0 pt-4">
+                    <!-- col-12 -->
+                    <div class="col-12 px-0 borderInput rounded-sm">
+
+                         <div class="row pt-3 mx-0 justify-content-between">
+                            <div class="col-1 pl-3 pl-md-2 text-center pt-2">
+                                <label class="container" for="shipping">
+                                    <input type="radio" name="radio" id="radio2">
+                                    <span class="checkmark"></span>
+                                </label>    
+                            </div>
+                            <div class="col-10 col-md-8 pl-1">
+                                <h4 class="sourceSansPro18 mb-0">Paypal</h4>
+                                <p class="sourceSansPro14 opacity80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                            </div>
+                            <div class="col-12 col-md-3 pl-md-0 pl-4 pt-lg-2">
+                                <img src="images/PayPalImg.jpg" alt="">
+                            </div>
+                         </div>
+                         
+                        
+                         
+                         <!-- <div class="row pt-3">
+                            <div class="col-1 pl-3 text-center pt-2">
+                                <label class="container" for="shipping">
+                                    <input type="radio" name="radio" id="radio2">
+                                    <span class="checkmark"></span>
+                                </label>    
+                            </div>
+                            <div class="col-md-8 col-11 pl-4 pl-md-2">
+                                <h4 class="sourceSansPro18 mb-0">Paypal</h4>
+                                <p class="sourceSansPro14 opacity80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            </div>
+                            <div class="col-md-3 pl-md-0 pl-4 pt-2">
+                                <img src="images/PayPalImg.jpg" alt="">
+                            </div>
+                         </div> -->
+
+                    </div><!-- /.col-12-->
+                </div>
+                <!-- /.Paypal -->
+
+
+                 <!-- hr line -->
+                 <div class="row py-4 mx-0 d-none d-none d-lg-flex">
+                    <div class="col-12 pt-1 border-bottom"></div>
+                </div>
+
+                <!-- buttons -->
+                <div class="row justify-content-lg-between no-gutters pb-3 d-none d-lg-flex">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-lg btn-secondary rounded-sm shopNow sourceSansPro text-white ">Pay Now</button>
+                    </div>
+                    <div class="col-4 ml-0 pl-0">
+                        <button type="button" class="btn btn-lg btn-danger shopNow rounded-sm sourceSansPro">Cancel</button>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <!-- /.buttons -->
+
+            </div>
+            <!-- /.Payment method -->
+
+
+
+            <!-- Summary 3 -->
+            <div class="col-12 col-lg-4 pl-lg-4 pl-2 pr-4 pr-lg-0 pt-4 pt-lg-0">
+
+                <!-- heading -->
+                <div class="row m-0 pb-4">
+                    <div class="col-12 border-bottom px-0">
+                        <h3>Summary</h3>
+                    </div>
+                </div>
+                <!-- /.heading -->
+
+                <div class="row mr-0 pb-4">
+                    <div class="col-6">
+                        <img src="images/productSmall2Img.jpg" class="borderInput" alt="product 1">
+                    </div>
+                    <div class="col-6 pl-0">
+                        <h5 class="sourceSansPro18">PRODUCT NAME</h5>
+                        <p class="sourceSansPro font20 text-left">$300</p>
+                    </div>    
+                    <!-- </div> -->
+                </div>
+
+                <div class="row mr-0 pb-4">
+                    <div class="col-6">
+                        <img src="images/productSmall2Img.jpg" class="borderInput" alt="product 1">
+                    </div>
+                    <div class="col-6 pl-0">
+                        <h5 class="sourceSansPro18">PRODUCT NAME</h5>
+                        <p class="sourceSansPro font20 text-left">$300</p>
+                    </div>    
+                    <!-- </div> -->
+                </div>
+
+                <!-- vaucher -->
+                <div class="row mx-0">
+                    <div class="col-12 border-top border-bottom px-0">
+                        <select name="select model" class="text-info py-3 w-100 border-0" > 
+                            <option selected="">HAVE A VOUCHER? </option>
+                            <option>Voucher 1</option> 
+                            <option>Voucher 2</option> 
+                            <option>Voucher 3</option> 
+                        </select> 
+                    </div>
+                </div><!-- vaucher -->
+
+                <!-- subtotal,shipping... -->
+                <div class="row mr-0 pt-3 pb-2">
+                    <div class="col-10">
+                        <h5 class="sourceSansPro18 text-secondary">SUBTOTAL</h5>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="sourceSansPro18 text-secondary">$600</h5>
+                    </div>
+                </div>
+                <div class="row mr-0 pb-1">
+                    <div class="col-10">
+                        <h5 class="sourceSansPro18 text-secondary">SHIPPING</h5>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="sourceSansPro18 text-secondary">FREE</h5>
+                    </div>
+                </div>
+                <div class="row mx-0 pt-1 pb-2 border-bottom">
+                    <div class="col-10 pl-0">
+                        <h5 class="sourceSansPro18 text-secondary">TAXES</h5>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="sourceSansPro18 text-secondary">$13</h5>
+                    </div>
+                </div>
+                
+                <!-- /.subtotal,shipping... -->
+
+                <!-- TOTAL -->
+                <div class="row mx-0 px-0 pt-3">
+                    <div class="col-lg-9 col-10 px-0">
+                        <h4 class="sourceSansPro  text-secondary pb-3">TOTAL</h4>
+                    </div>
+                    <div class="col-lg-3 col-2 text-lg-right pl-0 pl-lg-4">
+                        <h4 class="sourceSansPro font-weight-normal">$613</h4>
+                    </div>
+                </div>
+                <!-- /.TOTAL -->
+
+            </div>
+            <!-- /.Summary 3 -->
+
+
+
+
+            <!-- Buttons -->
+              <!-- Buttons -->
+            <div class="col-12 col-sm-10 col-md-7 col-lg-5 pl-0 pt-4 d-inline d-lg-none">
+                <div class="row justify-content-between no-gutters mt-0 pb-3 pt-1">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-lg btn-secondary rounded-sm shopNow sourceSansPro text-white ">Next</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-lg btn-danger shopNow rounded-sm sourceSansPro">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Buttons -->
+
+            <!-- <div class="col-12">
+                <div class="row justify-content-between no-gutters mt-0 pb-3">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-lg btn-secondary rounded-sm shopNow sourceSansPro text-white ">Pay Now</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-lg btn-danger shopNow rounded-sm sourceSansPro">Cancel</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Buttons -->
+
+        </div><!-- /.big row -->
+    </div><!-- /.Tab Panes 3 -->
+
+
+
+
+
+   
+</div><!-- /.Tab content -->
+
+
+    
+        <div class="row mx-0 pt-5 pb-5">
+            <div class="col-12 px-0 py-5"></div>
+        </div>
+
+        <!-- big hr line -->
+        <div class="row pb-0 pt-5 mx-0">
+            <div class="col-12 px-0"><hr class="border-info linija m-0"></div>
+        </div><!-- /.big hr line -->
+
+
+
+        <!-- Page Content 5th part -->
+        <div class="container-fluid px-3 px-lg-4 px-sm-3 px-md-4 py-0 mx-0">
+            <!-- 5th row -->
+            <div class="row px-4 px-sm-4 px-md-2 mx-0 px-lg-4 justify-content-start align-items-start pb-0">
+
+
+                <!-- VI part Footer -->
+                <div class="col-12 text-secondary pb-3 mt-0 text-center">
+
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-expand-sm navbar-light">
+
+                        
+                        <!-- List -->
+                        <div class="mx-auto navigacija">
+                            <ul class="navbar-nav ml-auto sourceSansPro16 position-relative">
+
+                                <li class="nav-item pr-lg-4">
+                                    <a class="nav-link text-secondary" href="index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item px-lg-4">
+                                    <a class="nav-link text-secondary" href="product.html">About</a>
+                                </li>
+
+                                <li class="nav-item px-lg-4">
+                                <a class="nav-link text-secondary" href="shop.html">Shop</a>
+                                </li>
+
+                                <li class="nav-item pl-lg-4 pr-lg-3">
+                                    <a class="nav-link text-secondary" href="#">Help</a>
+                                </li>
+                            
+                            </ul>
+
+                        </div>
+
+                    
+
+                </nav>
+                <!-- /.navbar -->
+
+                    <p class="mb-1 sourceSansPro17"><i class="fas fa-copyright text-info pr-2"></i>
+                        Your Company Name
+                    </p>
+                </div>
+                <!-- /.VI part Footer -->
+
+
+            </div>
+            <!-- /.5th row -->
+
+        </div><!-- /.page-content 5th part -->
+
+    </div><!-- /.wrapper -->
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
